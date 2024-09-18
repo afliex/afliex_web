@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    background-color: black;
+    background-image: url("pixelart_bg.png");
+    height: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 75px;
+    font-family: "Nunito", sans-serif;
+}
+
+.container {
+    height: 200px;
+    position: relative;
+}
+
+.buttons {
+    margin: 0;
+    position: absolute;
+    left: 35%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.discord_button {
+    background-color: rgb(49, 49, 49);
+    cursor: pointer;
+    width: 250px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    margin: 25px;
+    font-family: "DM Sans", sans-serif;
+    z-index: 5;
+}
+
+.roblox_button {
+    background-color: rgb(49, 49, 49);
+    cursor: pointer;
+    width: 250px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    font-family: "DM Sans", sans-serif;
+}
+
+@keyframes hoveranimation {
+    from {background-color: rgb(49, 49, 49);}
+    to {background-color: rgb(56, 56, 56);}
+}
+
+.discord_button:hover {
+    animation-name: hoveranimation;
+    animation-duration: 50ms;
+    animation-fill-mode: forwards;
+}
+
+.roblox_button:hover {
+    animation-name: hoveranimation;
+    animation-duration: 50ms;
+    animation-fill-mode: forwards;
+}
